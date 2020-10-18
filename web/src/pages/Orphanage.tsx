@@ -13,7 +13,7 @@ import 'leaflet/dist/leaflet.css';
 const mapIcon = Leaflet.icon({
   iconUrl: mapMarkerImg,
   iconSize: [58, 68],
-  iconAnchor: [29, 58],
+  iconAnchor: [29, 68],
   popupAnchor: [0, -60],
 });
 

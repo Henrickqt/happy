@@ -12,8 +12,8 @@ import 'leaflet/dist/leaflet.css';
 const mapIcon = Leaflet.icon({
   iconUrl: mapMarkerImg,
   iconSize: [58, 68],
-  iconAnchor: [29, 58],
-  popupAnchor: [170, 10],
+  iconAnchor: [29, 68],
+  popupAnchor: [170, 2],
 });
 
 function OrphanagesMap() {
@@ -64,7 +64,7 @@ function OrphanagesMap() {
         </Marker>
       </Map>
 
-      <Link to="/" className="create-orphanage">
+      <Link to="/orphanages/create" className="create-orphanage">
         <FiPlus size={32} color="#FFFFFF" />
       </Link>
     </div>
