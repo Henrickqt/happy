@@ -44,12 +44,12 @@ export default {
 
     const data = {
       name,
-      latitude,
-      longitude,
+      latitude: Number(latitude),
+      longitude: Number(longitude),
       about,
       instructions,
       opening_hours,
-      open_on_weekends,
+      open_on_weekends: open_on_weekends === 'true',
       images,
     };
 
