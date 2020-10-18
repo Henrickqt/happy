@@ -1,8 +1,9 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
-import { FiArrowLeft, FiPlus } from 'react-icons/fi';
+import { FiPlus } from 'react-icons/fi';
 import { Map, TileLayer, Marker } from 'react-leaflet';
 import Leaflet from 'leaflet';
+
+import Sidebar from '../components/Sidebar';
 
 import mapMarkerImg from '../images/map-marker.svg';
 
@@ -17,19 +18,9 @@ const mapIcon = Leaflet.icon({
 });
 
 function CreateOrphanage() {
-  const { goBack } = useHistory();
-
   return (
     <div id="page-create-orphanage">
-      <aside>
-        <img src={mapMarkerImg} alt="Happy"/>
-
-        <footer>
-          <button type="button" onClick={goBack}>
-            <FiArrowLeft size={24} color="#FFFFFF" />
-          </button>
-        </footer>
-      </aside>
+      <Sidebar />
 
       <main>
         <form className="create-orphanage-form">
@@ -64,7 +55,7 @@ function CreateOrphanage() {
             </div>
 
             <div className="input-block">
-              <label htmlFor="about">Sobre <span>Máximo de 300 caracteers</span></label>
+              <label htmlFor="about">Sobre <span>Máximo de 300 caracteres</span></label>
               <textarea id="about" maxLength={300} />
             </div>
 
