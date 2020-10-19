@@ -28,6 +28,7 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   column-gap: 16px;
+  row-gap: 16px;
 }
 
 .orphanage-details .images button {
@@ -52,7 +53,9 @@
 }
 
 .orphanage-details .orphanage-details-content {
-  padding: 80px;
+  border-top: 1px solid #D3E2E6;
+  margin: 64px 80px 80px;
+  padding-top: 64px;
 }
 
 .orphanage-details .orphanage-details-content h1 {
