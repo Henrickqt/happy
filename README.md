@@ -4,7 +4,7 @@ Project for government purposes, serving as a platform that connects childcare i
 
 This project uses [Node.js](https://nodejs.org/en/), [ReactJS](https://reactjs.org/), [ReactNative](https://reactnative.dev/) and [TypeScript](https://www.typescriptlang.org/), and it was developed during the NLW#3 of the [RocketSeat](https://rocketseat.com.br/) team.
 
-!img ......................
+![](https://github.com/Henrickqt/happy/blob/master/assets/happy.jpg)
 
 ## Server
 
